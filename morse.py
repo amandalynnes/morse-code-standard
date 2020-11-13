@@ -3,7 +3,7 @@
 """
 Morse Code: Standard Edition
 """
-__author__ = '???'
+__author__ = 'Amanda Simmons'
 
 from morse_dict import MORSE_2_ASCII
 
