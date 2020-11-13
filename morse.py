@@ -3,14 +3,25 @@
 """
 Morse Code: Standard Edition
 """
-__author__ = 'Amanda Simmons'
+__author__ = 'Amanda Simmons, Mike Boring, and Daniel Lomelina'
 
 from morse_dict import MORSE_2_ASCII
 
 
 def decode_morse(morse):
     # your code here
-    return
+    # decoded = ''
+    morse_words = morse.split('   ')
+    # morse_2 = ''
+    decoded_letters = []
+    for word in morse_words:
+        # decoded += MORSE_2_ASCII(char)
+        letters = word.split()
+        for letter in letters:
+            decoded_letters.append(MORSE_2_ASCII[letter])
+        decoded_letters.append(' ')
+
+    return ''.join(decoded_letters).strip()
 
 
 if __name__ == '__main__':
